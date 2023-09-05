@@ -78,7 +78,7 @@ public class Client {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your name");
         String name = sc.nextLine();
-        Socket socket = new Socket("192.168.1.17", 5000);
+        Socket socket = new Socket("ip address", "port");
         Client client = new Client(socket, name);
         client.readMessage();
         client.sendMessage();
